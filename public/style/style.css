@@ -1,8 +1,3 @@
-body {
-  margin: 0;
-  padding: 0;
-  background: #ccc;
-}
 .blueberry {
  color: #687A8F;
 }
@@ -15,11 +10,18 @@ body {
 .appleCore {
   color: #DCC7AA;
 }
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #DCC7AA;
+}
+
 .nav ul {
   list-style: none;
-  background-color: #444;
-  text-align: center;
-  padding: 0;
+  background-color: #687A8F;
+  text-align: left;
+  padding: 1em;
   margin: 0;
 }
 .nav li {
@@ -27,7 +29,7 @@ body {
   font-size: 1.2em;
   line-height: 40px;
   height: 40px;
-  border-bottom: 1px solid #888;
+  border-bottom: 1px solid #687A8F;
 }
 
 .nav a {
@@ -38,7 +40,7 @@ body {
 }
 
 .nav a:hover {
-  background-color: #005f5f;
+  background-color: #F7882F;
 }
 
 .nav a.active {
@@ -61,3 +63,4 @@ body {
     display: inline-block;
     margin-right: -4px;
   }
+}
