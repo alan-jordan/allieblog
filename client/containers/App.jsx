@@ -4,6 +4,7 @@ import Header from '../components/Header'
 import Title from '../components/Title'
 import Categories from '../components/Categories'
 import Posts from '../components/Posts'
+import Footer from '../components/Footer'
 
 const App = () => (
   <Router>
@@ -12,6 +13,7 @@ const App = () => (
       <Title />
       <Categories />
       <Posts />
+      <Footer />
     </div>
   </Router>
 )
