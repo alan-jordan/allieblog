@@ -1,13 +1,13 @@
 import React from 'react';
 
 const Header = () => (
-  <div className="header">
+  <div className="nav">
     <ul>
       <li>
-        <a href="#">about</a>
+        <a href="#">About</a>
       </li>
       <li>
-        <a href="#">follow me</a>
+        <a href="#">Follow me</a>
       </li>
     </ul>
   </div>

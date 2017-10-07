@@ -1,14 +1,20 @@
 .blueberry {
- color: #687A8F;
+  color: #687a8f;
 }
 .apricot {
-  color: #F7882F;
+  color: #f7882f;
 }
 .citrus {
-  color: #F7C331;
+  color: #f7c331;
 }
 .appleCore {
-  color: #DCC7AA;
+  color: #dcc7aa;
+}
+body {
+  font-family: "Domine", serif;
+  padding: 0;
+  margin: 0;
+  background-color: #dcc7aa;
 }
 .app-container {
   display: grid;
@@ -16,31 +22,70 @@
   grid-template-rows: 10% 10% 10% 10%;
 }
 
-.header {
+.nav {
   grid-column: 2 / span 2;
   grid-row: 1 / span 1;
-  background-color: grey;
+  background-color: #f7882f;
+}
+.nav ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+.nav ul li {
+  display: inline;
+  padding: 1%;
+}
+.nav a {
+  color: #111;
 }
 
 .title {
   grid-column: 2 / span 2;
   grid-row: 2 / span 1;
-  background-color: purple;
+  background-color: #dcc7aa;
+}
+.title h1 {
+  padding: 0 1% 0 1%;
 }
 
 .categories {
   grid-column: 3 / span 1;
   grid-row: 3 / span 1;
-  background-color: orange;
 }
 .posts {
   grid-column: 2 / span 1;
   grid-row: 3 / span 1;
-  background-color: red;
+}
+.posts h2 {
+  padding: 0 1% 0 1%;
+}
+.titleImage {
+  width: 25%;
+  height: 25%;
+}
+.date {
+  border-radius: 50%;
+  behavior: url(PIE.htc); /* remove if you don't care about IE8 */
+
+  width: 36px;
+  height: 36px;
+  padding: 8px 6px 6px 6px;
+
+  background: #111;
+  /* border: 2px solid #666; */
+  color: #ddd;
+  text-align: center;
+  font-size: 14px;
+  /* font: 32px Arial, sans-serif; */
 }
 .footer {
-  grid-column:2 / span 2;
+  grid-column: 2 / span 2;
   grid-row: 4 / span 1;
-  background-color: black;
-  color: white;
+  background-color: #f7882f;
+  color: #111;
+}
+.footer h2 {
+  padding: 0 1% 0 1%;
 }
