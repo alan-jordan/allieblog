@@ -65,20 +65,12 @@ body {
   width: 25%;
   height: 25%;
 }
-.date {
-  border-radius: 50%;
-  behavior: url(PIE.htc); /* remove if you don't care about IE8 */
-
-  width: 36px;
-  height: 36px;
-  padding: 8px 6px 6px 6px;
-
-  background: #111;
-  /* border: 2px solid #666; */
-  color: #ddd;
-  text-align: center;
-  font-size: 14px;
-  /* font: 32px Arial, sans-serif; */
+.postHeader h3 {
+  margin: 0;
+  padding: 0;
+}
+.postSubHeader {
+  font-size: 12px;
 }
 .footer {
   grid-column: 2 / span 2;
