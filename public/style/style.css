@@ -42,10 +42,8 @@ body {
 }
 .app-container {
   display: grid;
-  grid-template-columns: 5% 15% auto 15% 5%;
+  grid-template-columns: 5% 10% auto 15% 5%;
   grid-template-rows: auto;
-  grid-template-areas: "nav nav title title" "post post post categories"
-    "footer footer footer footer";
 }
 
 .nav {
@@ -69,10 +67,10 @@ body {
 .title {
   grid-column: 3;
   grid-row: 1;
-  align-self: start;
 }
 .title h1 {
   padding: 0 1% 0 1%;
+  align-self: start;
 }
 
 .categories {
