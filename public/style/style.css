@@ -8,7 +8,7 @@ body {
 }
 #container {
   display: grid;
-  grid-template-columns: 100px 50px auto 250px 100px;
+  grid-template-columns: 100px 50px 650px 250px 100px;
   grid-template-rows: 25px 100px auto 15%;
 }
 
@@ -31,6 +31,10 @@ body {
   grid-column: 2 / span 2;
   grid-row: 3;
 }
+.articleBottom {
+  display: flex;
+  flex-direction: row;
+}
 .sideBar {
   grid-column: 4;
   grid-row: 3
@@ -49,5 +53,16 @@ body {
 }
 .footer a {
   color: #393939;
+}
+.posts {
+  width: 640px;
+}
+.articleBottom a {
+    color: #393939;
+}
+.articleComments {
+  padding: 0;
+  margin: 0;
+  align-self: flex-endl
 }
 
