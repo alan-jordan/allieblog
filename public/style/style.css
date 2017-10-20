@@ -1,68 +1,64 @@
-
 body {
   padding: 0;
   margin: 0;
   background-color: #f7f2e9;
   color: #393939;
-  font-family: 'Lora', serif;
+  font-family: "Lora", serif;
 }
-#container {
+.container {
   display: grid;
   grid-template-columns: 100px 50px 650px 250px 100px;
   grid-template-rows: 25px 100px auto 15%;
 }
 
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr 2fr);
+  grid-template-areas: "head head head head head head"
+    "title title title title title title" "main main main main side side"
+    "foot foot foot foot foot foot";
+}
+
 .navHeader {
-  grid-column: 2/span 3;
-  grid-row: 1;
-  /* justify-self: safe center; */
-  justify-self: center;
+  grid-area: head;
 }
 
 .logoHeader {
-  grid-column: 2/ span 3; 
-  grid-row: 2;
-  align-self: center;
-  justify-self: center;
-  
+  grid-area: title;
 }
 
 .posts {
-  grid-column: 2 / span 2;
-  grid-row: 3;
+  grid-area: main;
 }
 .articleBottom {
   display: flex;
   flex-direction: row;
 }
 .sideBar {
-  grid-column: 4;
-  grid-row: 3
+  grid-area: side;
 }
 
 .footer {
-  grid-column: 2 / span 3;
-  grid-row: 4;
-  justify-self: center;
+  grid-area: foot;
 }
 
 .navHeader a {
-  /* padding: 0 5% 0 5%; */
   color: #393939;
-
 }
 .footer a {
   color: #393939;
 }
 .posts {
-  width: 640px;
+  width: 100%;
 }
 .articleBottom a {
-    color: #393939;
+  color: #393939;
 }
 .articleComments {
   padding: 0;
   margin: 0;
-  align-self: flex-endl
+  align-self: flex-endl;
 }
-
+.articleHeaderImage {
+  width: 100%;
+}
