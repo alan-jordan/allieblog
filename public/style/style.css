@@ -13,33 +13,46 @@ body {
 
 .grid {
   display: grid;
+  /* justify-items: end; */
+  grid-gap: 10px 10px;
   grid-template-columns: repeat(4, 1fr 2fr);
   grid-template-areas: "head head head head head head"
-    "title title title title title title" "main main main main side side"
+    "title title title title title title" "main main main main main side"
     "foot foot foot foot foot foot";
 }
 
 .navHeader {
   grid-area: head;
+  justify-self: center;
+  padding: 10px 0 0 0;
 }
 
 .logoHeader {
   grid-area: title;
+  justify-self: center;
 }
 
 .posts {
   grid-area: main;
+  justify-self: center;
+  padding: 0 10px 0 10px;
 }
-.articleBottom {
-  display: flex;
-  flex-direction: row;
-}
+
 .sideBar {
   grid-area: side;
 }
 
 .footer {
   grid-area: foot;
+  justify-self: center;
+  padding: 0 0 10px;
+}
+
+@media (max-width: 500px) {
+  .grid {
+    grid-template-columns: 90%;
+    grid-template-areas: "title" "head" "main" "foot";
+  }
 }
 
 .navHeader a {
@@ -48,17 +61,11 @@ body {
 .footer a {
   color: #393939;
 }
-.posts {
-  width: 100%;
-}
-.articleBottom a {
+
+.articleLink a {
   color: #393939;
 }
-.articleComments {
-  padding: 0;
-  margin: 0;
-  align-self: flex-endl;
-}
+
 .articleHeaderImage {
   width: 100%;
 }
